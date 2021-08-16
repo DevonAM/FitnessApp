@@ -1,8 +1,11 @@
-import React from 'react'
-
+import React from "react";
+import Navbar from "./Navbar";
+import { Label } from "semantic-ui-react";
+import { BrowserRouter, Route } from "react-router-dom";
+import PageOne from "./PageOne";
 
 const App = () => {
-    return <div>App</div>
-}
+  return <Navbar />;
+};
 
 export default App;
