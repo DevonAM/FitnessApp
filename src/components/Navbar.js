@@ -1,25 +1,27 @@
 import React from "react";
-import { BrowserRouter, Route } from "react-router-dom";
-import PageOne from "./PageOne";
 import { Link } from "react-router-dom";
 
-const PageTwo = () => {
-  return (
-    <div>
-      PageTwo
-      <Link to="/">Navigate to PageOne</Link>
-    </div>
-  );
-};
 const Navbar = () => {
   return (
-    <div>
-      <BrowserRouter>
-        <div>
-          <Route path="/" exact component={PageOne} />
-          <Route path="/PageTwo" component={PageTwo} />
-        </div>
-      </BrowserRouter>
+    <div className="ui secondary pointing menu">
+      <Link className="item" to="/">
+        FitnessApp
+      </Link>
+      <div className="right menu">
+        <Link className="item" to="/Dashboard">
+          Dashboard
+        </Link>
+        <Link className="item" to="/Signup">
+          Sign Up
+        </Link>
+        <Link className="item" to="/Signin">
+          Sign In
+        </Link>
+        <Link className="item" to="/Account">
+          Account
+        </Link>
+        <Link className="item">Sign Out</Link>
+      </div>
     </div>
   );
 };
